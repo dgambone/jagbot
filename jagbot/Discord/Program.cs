@@ -23,7 +23,7 @@ namespace JagBot
         public static void Main(string[] args) => new Program().Start(args);
 
         private const string AppName = "JagBot";
-        private const string AppUrl = "https://github.com/dgambone/uncle-daves-code/JagBot";
+        private const string AppUrl = "https://github.com/dgambone/jagbot";
 
         private DiscordClient _client;
 
@@ -76,10 +76,6 @@ namespace JagBot
 
             // Here's where the commands get loaded - DG
             _client.AddModule<CommandModule>("Commands", ModuleFilter.ServerWhitelist);
-
-            
-
-        
 
 #if PRIVATE
             PrivateModules.Install(_client);
