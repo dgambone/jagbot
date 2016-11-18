@@ -1,1 +1,0 @@
-﻿ask me what the config.json should look like.
